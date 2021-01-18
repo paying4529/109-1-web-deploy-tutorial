@@ -2,6 +2,7 @@
   "name": "my-sudoku",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://paying4529.github.io/109-1-web-deploy-tutorial/",
   "dependencies": {
     "-": "^0.0.1",
     "@material-ui/core": "^4.11.0",
@@ -19,6 +20,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy":"yarn build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
